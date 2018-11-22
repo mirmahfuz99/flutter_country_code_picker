@@ -23,13 +23,13 @@ class _SelectionDialogState extends State<SelectionDialog> {
       new SimpleDialog(
           title: new Column(
             children: <Widget>[
-              /*  new Text('Select country/region code',
+                new Text('Select Country',
 //                style: new TextStyle(color: Colors.black45),
-              ),*/
+              ),
               new TextField(
                 decoration: new InputDecoration(
                     prefixIcon: new Icon(Icons.search),
-                    hintText: 'Select country/region code'
+//                    hintText: 'Select country/region code'
                 ),
                 onChanged: _filterElements,
               ),
