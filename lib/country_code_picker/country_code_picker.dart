@@ -1,11 +1,8 @@
-library country_code_picker;
-
-import 'package:country_code_picker/celement.dart';
-import 'package:country_code_picker/country_codes.dart';
-import 'package:country_code_picker/selection_dialog.dart';
 import 'package:flutter/material.dart';
+import 'celement.dart';
+import 'country_codes.dart';
+import 'selection_dialog.dart';
 
-export 'celement.dart';
 
 class CountryCodePicker extends StatefulWidget {
   final Function(CElement) onChanged;
