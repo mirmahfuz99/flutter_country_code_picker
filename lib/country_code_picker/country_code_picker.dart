@@ -83,11 +83,9 @@ class _CountryCodePickerState extends State<CountryCodePicker> {
   Widget _buildPhonNumber() {
     /// Name and Status Part
     return Padding(
-        padding: const EdgeInsets.only(left: 20.0, right: 20.0,bottom: 30.0),
+        padding: const EdgeInsets.only(left: 20.0, right: 20.0, bottom: 30.0),
         child: Column(
-
           children: <Widget>[
-
             TextField(
               style: TextStyle(
                   fontFamily: "WorkSansSemiBold",
@@ -95,8 +93,8 @@ class _CountryCodePickerState extends State<CountryCodePicker> {
                   color: Colors.black),
               decoration: InputDecoration(
                 //border: InputBorder.none,
-                prefixText: '${selectedItem.toString()}  ',
-                hintText: "01703907089",
+                //prefixText: '${selectedItem.toString()}  ',
+                hintText: "${selectedItem.toString()} 01703907089",
                 hintStyle: TextStyle(
                   wordSpacing: 2.0,
                   fontFamily: "WorkSansSemiBold",
