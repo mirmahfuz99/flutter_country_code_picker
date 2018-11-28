@@ -18,15 +18,31 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return new MaterialApp(
         home: new Scaffold(
-            appBar: new AppBar(
-              title: const Text('CountryPicker Example'),
-            ),
             body: new Center(
-              child: new CountryCodePicker(
-                  onChanged: print,
-                  // Initial selection and favorite can be one of code ('IT') OR dial_code('+39')
-                  initialSelection: 'IT',
-                  favorite: ['+39', 'FR']),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: new Text('Enter your mobile number',style: TextStyle(fontSize: 20.0),),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 24.0),
+                    child: Text(
+                      "We'll send you a sms,please enter a valid phone number to verify you",
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                  new CountryCodePicker(
+                      onChanged: print,
+                      // Initial selection and favorite can be one of code ('IT') OR dial_code('+39')
+                      initialSelection: 'IT',
+                      favorite: ['+39', 'FR']),
+
+
+                ],
+              ),
             )));
   }
 }
