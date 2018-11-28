@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_locale/verifiedPage.dart';
 import 'country_code_picker/country_code_picker.dart';
 
-void main() => runApp(new MyApp());
+void main() => runApp(new VerifiedPage());
 
 class MyApp extends StatefulWidget {
   @override
